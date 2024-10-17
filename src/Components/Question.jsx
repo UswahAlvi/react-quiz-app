@@ -1,7 +1,12 @@
 import React from 'react'
 import Options from './Options'
 import Timer from './Timer';
-export default function Question({question, answer, dispatch,numQuestions,index,points,totalPoints,secondsRemaining}) {
+import { useQuiz } from '../contexts/QuizContext';
+export default function Question() {
+  const{dispatch,index,points,answer,questions}=useQuiz();
+  const numQuestions=questions.length;
+  const totalPoints=questions.reduce((prev,cur)=>prev+cur.points,0);
+  const question=questions[index];
   return (
     <div>
       <header className='progress'>
@@ -10,9 +15,9 @@ export default function Question({question, answer, dispatch,numQuestions,index,
         <p>Points <strong>{points}</strong>/{totalPoints}</p>
       </header>
       <h4>{question.question}</h4>
-      <Options question={question} answer={answer} dispatch={dispatch} />
+      <Options />
       <div style={{display:'flex', justifyContent:'space-between'}}>
-        <Timer dispatch={dispatch} secondsRemaining={secondsRemaining} />
+        <Timer/>
         <button className='btn btn-ui' 
               disabled={answer===null} 
               onClick={()=>{index+1===15?dispatch({type:'finished'}):dispatch({type:'nextClicked'});}}>

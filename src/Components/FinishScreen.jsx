@@ -1,6 +1,9 @@
 import React from 'react'
+import { useQuiz } from '../contexts/QuizContext';
 
-export default function ({points,totalPoints,dispatch,secondsRemaining}) {
+export default function () {
+    const {dispatch,secondsRemaining,points,questions}=useQuiz();
+    const totalPoints=questions.reduce((prev,cur)=>prev+cur.points,0);
     const per=(points/totalPoints)*100;
     const minutes=Math.floor(secondsRemaining/60);
     const seconds=secondsRemaining%60;

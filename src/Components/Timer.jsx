@@ -1,7 +1,9 @@
 import React from 'react'
 import { useEffect } from 'react';
+import { useQuiz } from '../contexts/QuizContext';
 
-export default function ({secondsRemaining,dispatch}) {
+export default function () {
+    const {secondsRemaining,dispatch}=useQuiz();
     const minutes=Math.floor(secondsRemaining/60);
     const seconds=secondsRemaining%60;
     useEffect(()=>{
