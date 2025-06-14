@@ -1,137 +1,92 @@
 {
   "questions": [
     {
-      "question": "Which is the most popular JavaScript framework?",
-      "options": ["Angular", "React", "Svelte", "Vue"],
+      "question": "Which flower is known as the 'Queen of the Night' because it blooms only at night?",
+      "options": ["Jasmine", "Moonflower", "Rose", "Lotus"],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "Which company invented React?",
-      "options": ["Google", "Apple", "Netflix", "Facebook"],
-      "correctOption": 3,
+      "question": "Which flower is famously associated with Dutch culture?",
+      "options": ["Daisy", "Tulip", "Sunflower", "Lily"],
+      "correctOption": 1,
       "points": 10
     },
     {
-      "question": "What's the fundamental building block of React apps?",
-      "options": ["Components", "Blocks", "Elements", "Effects"],
-      "correctOption": 0,
+      "question": "Which flower can rotate to follow the sun during the day?",
+      "options": ["Daffodil", "Sunflower", "Orchid", "Peony"],
+      "correctOption": 1,
       "points": 10
     },
     {
-      "question": "What's the name of the syntax we use to describe the UI in React components?",
-      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "question": "What does the red rose traditionally symbolize?",
+      "options": ["Friendship", "Peace", "Love", "Gratitude"],
       "correctOption": 2,
       "points": 10
     },
     {
-      "question": "How does data flow naturally in React apps?",
-      "options": [
-        "From parents to children",
-        "From children to parents",
-        "Both ways",
-        "The developers decides"
-      ],
+      "question": "Which flower is the largest in the world and smells like rotting flesh?",
+      "options": ["Corpse Flower", "Titan Lily", "Ghost Orchid", "Bat Flower"],
       "correctOption": 0,
       "points": 10
     },
     {
-      "question": "How to pass data into a child component?",
-      "options": ["State", "Props", "PropTypes", "Parameters"],
-      "correctOption": 1,
+      "question": "Which part of the flower produces pollen?",
+      "options": ["Petal", "Stigma", "Stamen", "Sepal"],
+      "correctOption": 2,
       "points": 10
     },
     {
-      "question": "When to use derived state?",
-      "options": [
-        "Whenever the state should not trigger a re-render",
-        "Whenever the state can be synchronized with an effect",
-        "Whenever the state should be accessible to all components",
-        "Whenever the state can be computed from another state variable"
-      ],
-      "correctOption": 3,
+      "question": "What flower is used to produce saffron spice?",
+      "options": ["Lily", "Daisy", "Crocus", "Tulip"],
+      "correctOption": 2,
       "points": 30
     },
     {
-      "question": "What triggers a UI re-render in React?",
-      "options": [
-        "Running an effect",
-        "Passing props",
-        "Updating state",
-        "Adding event listeners to DOM elements"
-      ],
+      "question": "Which flower’s seeds are edible and often used as a healthy snack?",
+      "options": ["Tulip", "Sunflower", "Lotus", "Lavender"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "Which flower can live for over 100 years in cold climates?",
+      "options": ["Rose", "Edelweiss", "Peony", "Carnation"],
       "correctOption": 2,
       "points": 20
     },
     {
-      "question": "When do we directly \"touch\" the DOM in React?",
-      "options": [
-        "When we need to listen to an event",
-        "When we need to change the UI",
-        "When we need to add styles",
-        "Almost never"
-      ],
-      "correctOption": 3,
-      "points": 20
-    },
-    {
-      "question": "In what situation do we use a callback to update state?",
-      "options": [
-        "When updating the state will be slow",
-        "When the updated state is very data-intensive",
-        "When the state update should happen faster",
-        "When the new state depends on the previous state"
-      ],
-      "correctOption": 3,
-      "points": 30
-    },
-    {
-      "question": "If we pass a function to useState, when will that function be called?",
-      "options": [
-        "On each re-render",
-        "Each time we update the state",
-        "Only on the initial render",
-        "The first time we update the state"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "Which hook to use for an API request on the component's initial render?",
-      "options": ["useState", "useEffect", "useRef", "useReducer"],
-      "correctOption": 1,
-      "points": 10
-    },
-    {
-      "question": "Which variables should go into the useEffect dependency array?",
-      "options": [
-        "Usually none",
-        "All our state variables",
-        "All state and props referenced in the effect",
-        "All variables needed for clean up"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "An effect will always run on the initial render.",
-      "options": [
-        "True",
-        "It depends on the dependency array",
-        "False",
-        "In depends on the code in the effect"
-      ],
+      "question": "Which flower is known for closing at night and opening in the morning?",
+      "options": ["Daisy", "Hibiscus", "Lotus", "Sunflower"],
       "correctOption": 0,
       "points": 30
     },
     {
-      "question": "When will an effect run if it doesn't have a dependency array?",
-      "options": [
-        "Only when the component mounts",
-        "Only when the component unmounts",
-        "The first time the component re-renders",
-        "Each time the component is re-rendered"
-      ],
+      "question": "Which flower was used to symbolize remembrance after World War I?",
+      "options": ["Lily", "Poppy", "Tulip", "Chrysanthemum"],
+      "correctOption": 1,
+      "points": 30
+    },
+    {
+      "question": "Which flower has no fragrance but is one of the most expensive to buy?",
+      "options": ["Rose", "Tulip", "Orchid", "Lily"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What do cherry blossoms symbolize in Japanese culture?",
+      "options": ["Courage", "Luck", "The beauty and brevity of life", "Love"],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "True or False: The blue rose occurs naturally in nature.",
+      "options": ["True", "False", "Only in winter", "Only under UV light"],
+      "correctOption": 1,
+      "points": 30
+    },
+    {
+      "question": "Which flower is traditionally used in making garlands in South Asia?",
+      "options": ["Jasmine", "Rose", "Marigold", "Both A and C"],
       "correctOption": 3,
       "points": 20
     }
