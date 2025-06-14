@@ -5,7 +5,7 @@ import { useQuiz } from '../contexts/QuizContext';
 export default function Question() {
   const{dispatch,index,points,answer,questions}=useQuiz();
   const numQuestions=questions.length;
-  const totalPoints=questions.reduce((prev,cur)=>prev+cur.points,0);
+  const totalPoints=questions?.reduce((prev,cur)=>prev+cur.points,0);
   const question=questions[index];
   return (
     <div>

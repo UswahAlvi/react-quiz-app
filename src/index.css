@@ -1,11 +1,11 @@
 :root {
-  --color-darkest: #343a40;
-  --color-dark: #495057;
+  --color-darkest: #8f997f;
+  --color-dark: #545c4c;
   --color-medium: #ced4da;
   --color-light: #f1f3f5;
 
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
+  --color-theme: #b5c767;
+  --color-accent: #e1e2ab;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
@@ -26,7 +26,8 @@ body {
   min-height: 100vh;
   color: var(--color-light);
   background-color: var(--color-darkest);
-  padding: 3.2rem;
+  padding: 10rem;
+  font-family: Helvetica;
 }
 
 .app {
@@ -37,15 +38,14 @@ body {
 }
 
 .main {
-  width: 50rem;
 }
 
 .app-header {
-  width: 66rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .error {
@@ -53,12 +53,12 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 2rem;
-  background-color: #495057;
+  background-color: #bdd39f;
   border-radius: 100px;
 }
 
 img {
-  width: 14rem;
+  width: 10rem;
 }
 
 h1 {
